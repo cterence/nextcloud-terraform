@@ -10,6 +10,10 @@ The data is stored directly on the Kubernetes node where the pod will be running
 
 The Terraform state is stored locally, which is fine for testing purposes, but not for production use.
 
+## Note
+
+This layer was built around the [kind](https://kind.sigs.k8s.io/) (Kubernetes IN Docker) Kubernetes cluster. You'll might want to change the MetalLB config map according to your external CIDR (following this [guide](https://kind.sigs.k8s.io/docs/user/loadbalancer/#setup-address-pool-used-by-loadbalancers)).
+
 ## Install
 
 * Initialize the layer
